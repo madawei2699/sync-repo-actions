@@ -1,6 +1,7 @@
 on:
   schedule:
-    - cron:  "*/1 * * * *"
+  - cron:  "*/1 * * * *"
+  workflow_dispatch:
 
 jobs:
   repo-sync:
