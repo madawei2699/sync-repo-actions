@@ -13,8 +13,8 @@ jobs:
     - name: repo-sync
       uses: douglaskastle/github-sync@v2
       with:
-        source_repo: "https://github.com/madawei2699/bmpi.dev"
-        destination_repo: "https://github.com/bmpi-dev/bmpi.dev"
+        source_repo: "madawei2699/bmpi.dev"
+        destination_repo: "bmpi-dev/bmpi.dev"
         source_branch: "master"
         destination_branch: "master"
         github_token: ${{ secrets.PAT }}
