@@ -1,0 +1,19 @@
+on:
+  schedule:
+    - cron:  "*/1 * * * *"
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: repo-sync
+      uses: douglaskastle/github-sync
+      with:
+        source_repo: "https://github.com/madawei2699/bmpi.dev"
+        destination_repo: "https://github.com/bmpi-dev/bmpi.dev"
+        source_branch: "master"
+        destination_branch: "master"
+        github_token: ${{ secrets.PAT }}
