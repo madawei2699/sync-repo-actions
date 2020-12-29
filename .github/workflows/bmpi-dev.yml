@@ -1,7 +1,8 @@
+name: SYNC_REPO_EVERYDAY
+
 on:
   schedule:
-  - cron:  "*/1 * * * *"
-  workflow_dispatch:
+    - cron:  '*/10 * * * *'
 
 jobs:
   repo-sync:
