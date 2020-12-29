@@ -11,7 +11,7 @@ jobs:
       with:
         persist-credentials: false
     - name: repo-sync
-      uses: douglaskastle/github-sync
+      uses: douglaskastle/github-sync@v2
       with:
         source_repo: "https://github.com/madawei2699/bmpi.dev"
         destination_repo: "https://github.com/bmpi-dev/bmpi.dev"
