@@ -3,6 +3,9 @@ name: SYNC_REPO_EVERYDAY
 on:
   schedule:
     - cron:  '0 1 * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   repo-sync:
